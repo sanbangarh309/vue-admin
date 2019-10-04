@@ -1,0 +1,23 @@
+@include scrollbars(.4em, #d9d9d9, rgba(0, 0, 0, 0));
+
+.page-wrapper {
+  @include calc('height', '100vh - ' $top-height);
+  margin-top: $top-height;
+
+  .content-wrapper {
+    padding: 10px;
+    min-height: 100%;
+    overflow: hidden;
+
+    .content-header {
+      height: $content-header-height;
+    }
+
+    .header-breadcrumb {
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border-radius: 0;
+    }
+  }
+}
